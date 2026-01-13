@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Navigation System</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <!-- Leaflet (OpenStreetMap) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🌍 City Navigation System – Shortest Path Finder</h1>
+  </header>
+
+  <div class="container">
+    <div class="inputs">
+      <input id="start" type="text" placeholder="Enter Current City" autocomplete="off">
+      <div id="start-suggestions" class="suggestions"></div>
+
+      <input id="end" type="text" placeholder="Enter Destination City" autocomplete="off">
+      <div id="end-suggestions" class="suggestions"></div>
+
+      <button id="routeBtn">Find Route</button>
+    </div>
+
+    <div id="map"></div>
+    <div id="output" class="info-box"></div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

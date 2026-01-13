@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef3f8;
+}
+
+header {
+  background: #0078ff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.inputs {
+  margin-bottom: 10px;
+}
+
+.inputs input {
+  padding: 10px;
+  margin: 5px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#routeBtn {
+  padding: 10px 15px;
+  background: #0078ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#routeBtn:hover {
+  background: #005fcc;
+}
+
+#map {
+  width: 90%;
+  height: 500px;
+  border-radius: 8px;
+  border: 2px solid #0078ff;
+}
+
+#output {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+
+
+.info-box {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+
+.suggestions {
+  position: relative;
+  width: 250px;
+}
+
+.suggestions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: absolute;
+  width: 100%;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.suggestions li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background: #0078ff;
+  color: white;
+}
